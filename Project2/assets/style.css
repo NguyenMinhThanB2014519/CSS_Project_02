@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* commont  */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  background-color: #171100;
+  border-radius: 24.5px;
+  display: inline-block;
+  /* display inlibe- block co the thay doi padding margin */
+  padding: 0px 16px;
+  line-height: 50px;
+  min-width: 118px;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  background-color: #fffcf4;
+}
+/* header */
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0px 8px;
+}
+.body {
+  /* background-color: red; */
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  font-size: 1.6rem;
+  color: #5f5b53;
+  /* color: red; */
+  padding: 8px 21px;
+  /* background-color: red; */
+  position: relative;
+}
+.nav ul {
+  display: flex;
+  margin-right: 49px;
+}
+.nav li .active::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+}
+.nav a:hover,
+.nav li .active {
+  /* font-weight: 600; */
+  /* nếu dùng fontw thì chữ sẽ bị giật giật khi hover vào
+  thay vào đó ta sử dụng textshaw--- cái này thấy ngon lành nè  */
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+.header .signup-btn {
+  min-width: 144px;
+}
